@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual Wield Tutoring</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: #f0f4f8;
+      color: #1a1a1a;
+    }
+    header {
+      background: #0b0c10;
+      color: #66fcf1;
+      padding: 1rem;
+      text-align: center;}
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 0.1em;
+    }
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4rem;
+      padding: 4rem 2rem;
+      background: #ffffff;
+    }
+    .hero img {
+      width: 700px;
+      height: auto;
+      border-radius: 0px;
+      border: 0px solid #66fcf1;
+    }
+    .hero-text {
+      max-width: 800px;
+      font-size: 4rem;
+      font-weight: bold;
+      color: #0b0c10;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .tutor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .tutor {
+      background: #ffffff;
+      border: 2px solid #1f2833;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 12px;
+    }
+    .tutor img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      border: 2px solid #66fcf1;
+    }
+    .tutor h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #0b0c10;
+    }
+    .tutor p {
+      color: #333;
+    }
+    .tutor ul {
+      padding-left: 1rem;
+      margin-top: 1rem;
+      text-align: left;
+    }
+    .tutor ul li {
+      margin-bottom: 0.5rem;
+    }
+    .tutor ul ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    footer {
+      background: #0b0c10;
+      color: #66fcf1;
+      padding: 2rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+      a.social-icon img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      filter: brightness(0) saturate(100%) invert(75%) sepia(38%) saturate(3258%) hue-rotate(125deg) brightness(97%) contrast(98%);
+    }
+
+    a.social-icon:hover img {
+      transform: scale(1.2);
+      filter: brightness(0) saturate(100%) invert(49%) sepia(93%) saturate(353%) hue-rotate(137deg) brightness(90%) contrast(101%);
+    }
+      /* Animations & Hover Effects */
+    .tutor {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .tutor:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .tutor img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1f2833;
+      color: #ffffff;
+    }
+
+    .hero img {
+      transition: transform 0.5s ease;
+    }
+    .hero img:hover {
+      transform: scale(1.03);
+    }
+
+    .hero-text {
+      transition: color 0.3s ease;
+    }
+    .hero-text:hover {
+      color: #1f2833;
+    }
+
+    .social-icon {
+      transition: transform 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+
+    .hero-text a {
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    .hero-text a:hover {
+      background-color: #66fcf1;
+      color: #0b0c10;
+      transform: scale(1.05);
+    }
+    @keyframes ticker-marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+</style>
+</head>
+<body>
+  <header>
+    <h1>DUAL WIELD TUTORING</h1>
+    <div style="background-color: #66fcf1; color: #0b0c10; padding: 0.5rem; font-weight: bold; font-size: 1.1rem; white-space: nowrap; overflow: hidden;">
+      <div style="display: inline-block; padding-left: 100%; animation: ticker-marquee 20s linear infinite;">
+        CONTACT US TODAY FOR AN HOUR OF AP, ACT, SAT, ENGLISH PROFICIENCY OR COLLEGE EXAM TUTORING 50% OFF!
+      </div>
+    </div>
+  </header>
+
+  <div class="hero" style="padding: 3rem 2rem; max-width: 1920px; margin: auto;">
+    <img src="001.jpg" alt="Tutoring Help">
+    <div class="hero-text">
+      HELPING YOU SLASH YOUR EXAMS!
+      <p style="font-size: 1.25rem; font-weight: normal; max-width: 700px; margin-top: 1rem;">
+        Two academic weapons will help you sharpen your blade to destroy AP exams, standardized tests, English proficiency tests, and even your college finals for gen ed courses! Ace your exams with ease. Contact us today!
+
+        If you are a Gatton Academy student, you will receive your first hour of tutoring entirely free.
+      </p>
+      <a href="mailto:contact@dualwieldtutoring.com?cc=&bcc=&subject=Dual%20Wield%20Tutoring%20Appointment&body=I%20would%20like%20to%20book%20tutoring%20for%20%5BSUBJECT%20OR%20EXAM%5D%20on%20%5BDATE%5D%2C%20ideally%20at%20%5BTIME%5D.%20I%20can%20do%20so%20%5BOVER%20ZOOM%20%2F%20PHYSICALLY%20(I%20live%20in%20the%20CINCINNATI%20METRO%20AREA%20or%20the%20BOWLING%20GREEN%20METRO%20AREA)%5D%0A%5BIf%20you%20are%20a%20student%20of%20the%20Gatton%20Academy%2C%20please%20indicate%20for%20a%20free%20lesson.%5D%20%0A%5BIf%20this%20is%20your%20first%20hour%20with%20Dual%20Wield%2C%20please%20indicate%20for%2050%25%20off.%5D%0AThank%20you%2C%0A%5BYOUR%20NAME%5D%20" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background-color: #0b0c10; color: #66fcf1; border: none; border-radius: 6px; font-family: 'Courier New', monospace; text-decoration: none; font-weight: bold;">CONTACT</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>Meet the Tutors</h2>
+    <div class="tutor-grid">
+      <div class="tutor">
+        <img src="01headshots.gif" alt="Tutor 1">
+        <h2>Flynn Cook</h2>
+        <p>High school junior at the Gatton Academy of Mathematics and Science: currently taking a full schedule of college courses, ~14 per academic year. Perpetually fascinated by the world. Fan of engineering, factories, chess, film, rollercoasters, and language. Can speak English, Dutch, and a little Russian. Loves pedagogy.</p>
+        <ul>
+          <li><strong>Scores:</strong>
+            <ul>
+              <li>36 ACT (sophomore year)</li>
+              <li>1520 PSAT</li>
+            </ul>
+          </li>
+          <li><strong>Can tutor:</strong>
+            <ul>
+              <li>ACT / PreACT</li>
+              <li>SAT / PSAT</li>
+              <li>AP Pre-Calculus</li>
+              <li>AP Calculus AB (and College Equivalent)</li>
+              <li>AP Calculus BC (and College Equivalent)</li>
+              <li>AP Computer Science A (and College Equivalent)</li>
+              <li>AP Computer Science Principles</li>
+              <li>AP Biology & College-Level Microbiology</li>
+              <li>AP World History</li>
+              <li>AP Chemistry (and College Equivalent)</li>
+              <li>AP Seminar</li>
+              <li>Java, C#, JavaScript, HTML, CSS, LaTeX</li>
+              <li>Duolingo English Test & IELTS</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="tutor">
+        <img src="02 headshots.gif" alt="Tutor 2">
+        <h2>Benjamin Gallagher</h2>
+        <p>A junior student athlete at Highlands High School well versed in several subjects, and an aspiring mechanical engineer. Believes that there shouldn't ever be a need to submit a test-optional college application. Particularly interested in bolstering people's standardized testing scores to ensure that any and all tutees making use of our resources can soar.</p>
+        <ul>
+          <li><strong>Scores:</strong>
+            <ul>
+              <li>35 ACT</li>
+              <li>5s on various AP Subject Exams</li>
+            </ul>
+          </li>
+          <li><strong>Can tutor:</strong>
+            <ul>
+              <li>ACT / PreACT</li>
+              <li>SAT / PSAT</li>
+              <li>AP Pre-Calculus</li>
+              <li>AP Statistics</li>
+              <li>AP Biology</li>
+              <li>AP World History</li>
+              <li>AP Chemistry</li>
+              <li>AP Seminar</li>
+              <li>AP US History</li>
+              <li>AP Human Geography</li>
+              <li>Duolingo English Test & IELTS</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #d0e4f5; padding: 3rem 2rem; max-width: 1000px; margin: auto;">
+    <h2 style="text-align: center; color: #0b0c10;">What You'll Get</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+      <div style="flex: 1 1 250px; background: #ffffff; border: 2px solid #1f2833; border-radius: 12px; padding: 1.5rem;">
+        <h3 style="margin-top: 0; color: #0b0c10;">Unlimited Sessions</h3>
+        <p>As many tutoring sessions as you want for an hourly rate.</p>
+      </div>
+      <div style="flex: 1 1 250px; background: #ffffff; border: 2px solid #1f2833; border-radius: 12px; padding: 1.5rem;">
+        <h3 style="margin-top: 0; color: #0b0c10;">Custom Homework</h3>
+        <p>Custom crafted homework to help you improve in your target areas of struggle.</p>
+        <div style="text-align: center; font-family: 'Courier New', monospace;">
+            <a href="sample001.pdf" target="_blank" style="text-decoration: none;"><button style="margin: 0.5rem; padding: 0.75rem 1.5rem; background-color: #0b0c10; color: #66fcf1; border: none; border-radius: 6px; cursor: pointer; font-family: inherit; width: 100%; max-width: 200px;">Download Example 1 (SAT Math)</button></a>
+        </div>
+        <div style="text-align: center; font-family: 'Courier New', monospace;">
+                    <a href="sample002.pdf" target="_blank" style="text-decoration: none;"><button style="margin: 0.5rem; padding: 0.75rem 1.5rem; background-color: #0b0c10; color: #66fcf1; border: none; border-radius: 6px; cursor: pointer; font-family: inherit; width: 100%; max-width: 200px;">Download Example 2 (AP Calculus AB)</button></a>
+        </div>
+      </div>
+      <div style="flex: 1 1 250px; background: #ffffff; border: 2px solid #1f2833; border-radius: 12px; padding: 1.5rem;">
+        <h3 style="margin-top: 0; color: #0b0c10;">Guaranteed Results</h3>
+        <p>An improvement on your test scores / customer satisfaction.</p>
+      </div>
+    </div>
+  </section>
+
+<section>
+  <h2 style="text-align: center; color: #0b0c10;">Our Plans</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+    <div style="flex: 1 1 250px; background: #ffffff; border: 2px solid #1f2833; border-radius: 12px; padding: 1.5rem; text-align: center;">
+      <h3 style="color: #0b0c10;">Custom Homework</h3>
+      <p>Receive personalized assignments designed to target your individual areas of struggle and boost your mastery over time.</p>
+      <p style="font-weight: bold; margin-top: 1rem;">$5.00 for 20 problems<br>$0.50 for every additional problem (see samples above)</p>
+    </div>
+    <div style="flex: 1 1 250px; background: #ffffff; border: 2px solid #1f2833; border-radius: 12px; padding: 1.5rem; text-align: center;">
+      <h3 style="color: #0b0c10;">Personal AP / College Exam Tutoring</h3>
+      <p>One-on-one sessions with expert tutors covering any of the above AP subjects or their equivalent college course exams, tailored to your goals.</p>
+      <p style="font-weight: bold; margin-top: 1rem;">$25/hr <br>First hour 50% off!</p>
+    </div>
+    <div style="flex: 1 1 250px; background: #ffffff; border: 2px solid #1f2833; border-radius: 12px; padding: 1.5rem; text-align: center;">
+      <h3 style="color: #0b0c10;">Personal ACT/SAT Tutoring</h3>
+      <p>Get targeted guidance and test strategies to elevate your ACT or SAT scores with personalized plans and unlimited sessions from perfect and high scorers.</p>
+      <p style="font-weight: bold; margin-top: 1rem;">$30/hr <br>First hour 50% off!</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <p>Contact us: (859) 697-5989 | contact@dualwieldtutoring.com</p>
+    <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1rem;">
+      <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="https://instagram.com" class="social-icon" aria-label="Instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://twitter.com" class="social-icon" aria-label="Twitter">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter">
+      </a>
+    </div>
+    <p>Based in Fort Thomas, Kentucky / Eastern Time – <span id="est-time"></span></p>
+  </footer>
+<script>
+  function updateESTTime() {
+    const options = {
+      timeZone: 'America/New_York',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    };
+    const formatter = new Intl.DateTimeFormat([], options);
+    document.getElementById('est-time').textContent = formatter.format(new Date());
+  }
+
+  updateESTTime();
+  setInterval(updateESTTime, 1000);
+</script>
+</body>
+</html>
